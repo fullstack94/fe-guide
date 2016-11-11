@@ -1,55 +1,50 @@
-# Directory Guide
-
 ---
-
 静态资源目录规范指南。
-
 ---
-
 **【强制】** 所有资源类型必须按以下目录放置；
 
-## 工作流默认目录
-
-```html
-src/                                # static resource directory
+nodem/                               # root Directory
 |
-|-- css/                            # all generated CSS
-|   |-- global.sss                  # the global stylesheet
+|-- controller/                      # 业务层
+|   |-- user.js
 |   ...
 |
-|-- img/                            # all images
-|   |-- bg-body.jpg                 # body background
-|   ...
+|-- web_router.js                    # 路由层
 |
-|-- js/                             # all javascript files
-|   |-- main.js                     # general documentation
-|   |-- vendor                      # third-party plugins
-|       |-- modernizr-2.8.3.min.js
-|       |-- ...
-|   ...
+|-- public/                          # 本地开发
+|   |-- scss/
+|       |-- user/user.scss
+|       |...
+|   |-- js/
+|       |-- user/user.js
+|       |...
+|   |-- images/
+|       |-- user/user.jpg
+|       |...
 |
-|-- sass/                           # all SASS files
-|   |-- global.scss                 # the global SASS
-|   |-- _slice.scss                 # automatic img to css
-|   |-- base                        # the base SASS
-|       |-- _base.scss
-|       |-- _mixins.scss
-|       |-- _normalize.scss
-|   |-- lego                        # the LEGO UI SASS
-|       |-- _lego.scss
-|       |-- _ui-box.scss
-|       |-- _ui-tab.scss
-|       |-- ...
-|   |-- biz1                        # the business SASS
-|       |-- ...
-|   |-- biz2                        # the business SASS
-|       |-- ...
+|-- dist/                             # 版本发布
+|   |-- scss/
+|       |-- user/user.scss
+|       |...
+|   |-- js/
+|       |-- user/user.js
+|       |...
+|   |-- images/
+|       |-- user/user.jpg
+|       |...
 |
-|-- tpl/                            # the templates
-|   |-- ...
+|-- views/                            # 模板文件
+|   |-- user/
+|       |-- user/user.html
+|       |...
 |
-`-- index.html                      # the html file
-```
+|-- app.js                            # node配置
+|
+|-- config.js                         # host 端口配置
+|
+|-- gulpfile.js                       # gulp task配置
+|
+|  ...
 
 
 ## 完整目录
